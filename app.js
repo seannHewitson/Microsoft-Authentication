@@ -112,6 +112,7 @@ passport.use(new OIDCStrategy({
         if (!user) {
           // "Auto-registration"
           users.push(profile);
+          console.log(users);
           return done(null, profile);
         }
         return done(null, user);

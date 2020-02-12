@@ -1,6 +1,7 @@
 exports.creds = {
     // Required
-    identityMetadata: 'https://login.microsoftonline.com/Seann.onmicrosoft.com/v2.0/.well-known/openid-configuration', 
+    // identityMetadata: 'https://login.microsoftonline.com/Seann.onmicrosoft.com/v2.0/.well-known/openid-configuration', 
+    identityMetadata: 'https://login.microsoftonline.com/common/.well-known/openid-configuration',
     // or equivalently: 'https://login.microsoftonline.com/<tenant_guid>/v2.0/.well-known/openid-configuration'
     //
     // or you can use the common endpoint
@@ -18,7 +19,7 @@ exports.creds = {
     responseMode: 'form_post', 
   
     // Required, the reply URL registered in AAD for your app
-    redirectUrl: 'https://seann.xyz/auth/callback', 
+    redirectUrl: 'https://localhost/auth/callback', 
   
     // Required if we use http for redirectUrl
     allowHttpForRedirectUrl: true,
